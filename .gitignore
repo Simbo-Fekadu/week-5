@@ -1,0 +1,30 @@
+# Data files (never commit raw data)
+data/raw/
+data/processed/
+!data/raw/.gitkeep  # Keeps folders but ignores contents
+!data/processed/.gitkeep
+
+# Virtual environment
+venv/
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.swp
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Jupyter notebooks checkpoint
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+
+# MLflow tracking
+mlruns/
