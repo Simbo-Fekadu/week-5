@@ -10,3 +10,8 @@ features:
 # RFM parameters
 rfm:
   snapshot_date: "2019-12-31" # Cutoff date for Recency
+
+# Risk clustering parameters
+risk_model:
+  n_clusters: 3
+  risk_cluster: 0 # Index of high-risk cluster
