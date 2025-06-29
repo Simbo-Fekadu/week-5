@@ -15,3 +15,9 @@
 2. **Missing Values**:
    - `ProductCategory`: Filled with 'missing'
    - `Amount`: Filled with median
+
+## Target Variable
+
+| Feature      | Type   | Description                                           |
+| ------------ | ------ | ----------------------------------------------------- |
+| is_high_risk | binary | 1=High risk (cluster with low engagement), 0=Low risk |
