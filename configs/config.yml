@@ -1,0 +1,12 @@
+# Outlier handling (from EDA)
+outlier_caps:
+  Amount: 1000000 # UGX (99th percentile)
+
+# Feature engineering
+features:
+  numeric: ["Amount", "Value", "Recency", "Frequency", "Monetary"]
+  categorical: ["ProductCategory", "ChannelId"]
+
+# RFM parameters
+rfm:
+  snapshot_date: "2019-12-31" # Cutoff date for Recency
