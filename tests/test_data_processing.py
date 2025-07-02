@@ -82,3 +82,10 @@ ax = fig.add_subplot(111, projection='3d')
 ax.scatter(df_processed['Recency'], df_processed['Frequency'], df_processed['Monetary'], 
            c=df_processed['is_high_risk'], cmap='viridis')
 plt.savefig('reports/figures/rfm_clusters.png')
+
+def test_model_training():
+    """Test model training pipeline"""
+    from src.train import load_data
+    data = load_data()
+    assert 'is_high_risk' in data.columns
+    assert not data.isnull().any().any()

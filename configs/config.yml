@@ -15,3 +15,8 @@ rfm:
 risk_model:
   n_clusters: 3
   risk_cluster: 0 # Index of high-risk cluster
+# Model training parameters
+model_training:
+  test_size: 0.2
+  random_state: 42
+  hyperopt_evals: 20
